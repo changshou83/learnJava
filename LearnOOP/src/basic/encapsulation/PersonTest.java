@@ -1,4 +1,4 @@
-package basic;
+package basic.encapsulation;
 /*
  * 面向对象的特征一：封装与隐藏     3W:what? why? how?
  * 一、问题的引入：

@@ -5,11 +5,15 @@ public class Student extends Person {
 
     public Student() {
     }
+
     public Student(String name, int age, String major) {
+        // super关键字访问父类
         super(name, age);
+        // this关键字访问实例对象
         this.major = major;
     }
 
+    // 方法重写
     @Override
     public void eat() {
         System.out.println("吃饭");

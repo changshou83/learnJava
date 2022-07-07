@@ -1,7 +1,8 @@
-package basic;
+package basic.encapsulation;
 
 import java.lang.reflect.Field;
 
+import basic.encapsulation.Person;
 import exer.Triangle;
 
 import java.util.*;
