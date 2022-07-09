@@ -2,7 +2,7 @@ package basic;
 
 import java.util.Arrays;
 
-public class ArrayUtils {
+public class ArrayMethods {
     public static void main(String[] args) {
         int[] array1 = new int[]{1,2,3,4};
         int[] array2 = new int[]{1,2,3,4};
