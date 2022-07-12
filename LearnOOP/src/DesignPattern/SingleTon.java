@@ -56,9 +56,20 @@ class Order {
     private static Order instance = null;
 
     //3.声明public、static的返回当前类对象的方法
+//    public static Order getInstance() {
+//        if (instance == null) {
+//            instance = new Order();
+//        }
+//        return instance;
+//    }
+//    线程安全的懒汉式
     public static Order getInstance() {
         if (instance == null) {
-            instance = new Order();
+            synchronized (Order.class) {
+                if (instance == null) {
+                    instance = new Order();
+                }
+            }
         }
         return instance;
     }
